@@ -18,21 +18,28 @@ To run this program, you can use Remix, an online Solidity IDE. To get started, 
 
 Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., TokenContract.sol). Copy and paste the following code into the file:
 
+
+
+
 // SPDX-License-Identifier: MIT
+
+
 pragma solidity ^0.8.0;
 
 
 
-
-
-
-
 contract MyToken {
+    
     string public name = "My Token";
+   
     string public symbol = "MTK";
+   
     uint8 public decimals = 18;
+    
     uint256 public totalSupply;
+   
     address public owner;
+   
     mapping(address => uint256) public balanceOf;
     mapping(address => mapping(address => uint256)) public allowance;
 
