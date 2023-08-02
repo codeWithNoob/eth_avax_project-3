@@ -21,13 +21,18 @@ Once you are on the Remix website, create a new file by clicking on the "+" icon
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
+
+
+
+
+
+
 contract MyToken {
     string public name = "My Token";
     string public symbol = "MTK";
     uint8 public decimals = 18;
     uint256 public totalSupply;
     address public owner;
-
     mapping(address => uint256) public balanceOf;
     mapping(address => mapping(address => uint256)) public allowance;
 
