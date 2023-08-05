@@ -15,7 +15,7 @@ contract MyToken {
     event Approval(address indexed owner, address indexed spender, uint256 value);
 
     constructor(uint256 initialSupply) {
-        totalSupply = initialSupply ;
+        totalSupply = initialSupply*10**uint256(decimals) ;
         balanceOf[msg.sender] = totalSupply;
         owner = msg.sender;
     }
